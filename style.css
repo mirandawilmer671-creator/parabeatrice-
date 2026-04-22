@@ -1,0 +1,89 @@
+body {
+    background-color: #f4f7f4;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.nature-container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 90%;
+    border: 2px solid #a3b18a;
+}
+
+.photo-frame img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #588157;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.elegant-title { color: #3a5a40; margin-bottom: 5px; }
+.subtitle { color: #588157; font-style: italic; margin-bottom: 20px; }
+
+button {
+    background-color: #588157;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hidden { display: none; }
+
+/* Efecto de las hojas */
+.leaf-scratch-container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px auto;
+}
+
+.leaf-overlay {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 10;
+}
+
+.scratch-leaf {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.4s;
+    user-select: none;
+}
+
+.cleared { opacity: 0; pointer-events: none; }
+
+.hidden-message {
+    padding: 20px;
+    background: #fefae0;
+    border-radius: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.letter-style p { color: #344e41; line-height: 1.5; font-size: 15px; }
+.core-message { font-weight: bold; font-size: 18px !important; color: #bc6c25 !important; }
+
+@keyframes fall {
+    to { transform: translateY(105vh) rotate(360deg); }
+}
