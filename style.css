@@ -1,0 +1,94 @@
+body {
+    background-color: #f4f7f4;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    touch-action: manipulation;
+}
+
+.nature-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 320px;
+    width: 90%;
+    border: 2px solid #a3b18a;
+    position: relative;
+    z-index: 5;
+}
+
+.photo-frame img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #588157;
+    object-fit: cover;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.elegant-title { color: #3a5a40; font-size: 1.5rem; margin: 10px 0; }
+.subtitle { color: #588157; font-style: italic; margin-bottom: 15px; }
+
+button {
+    background-color: #588157;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hidden { display: none; }
+
+.leaf-scratch-container {
+    position: relative;
+    margin-top: 20px;
+    min-height: 350px;
+}
+
+.leaf-overlay {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 20;
+}
+
+.scratch-leaf {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.cleared { opacity: 0; transform: scale(0); pointer-events: none; }
+
+.hidden-message {
+    padding: 15px;
+    background: #fefae0;
+    border-radius: 15px;
+    border: 1px dashed #bc6c25;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.instruction { font-size: 12px; color: #888; margin-top: 10px; }
+.letter-style p { color: #344e41; line-height: 1.4; font-size: 14px; margin: 8px 0; }
+.core-message { font-weight: bold; font-size: 16px !important; color: #bc6c25 !important; text-align: center; }
+
+@keyframes fall {
+    to { transform: translateY(110vh) rotate(360deg); }
+}
