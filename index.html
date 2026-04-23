@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Para Beatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nature-container">
+      <div class="photo-frame">
+        <img src="https://i.ibb.co/HLfcy2vp/IMG-20260412-134521-544.jpg" alt="Beatrice">
+      </div>
+      <h1 class="elegant-title">Happy Birthday, Beatrice</h1>
+      <p class="subtitle">A special gift for a special person</p>
+      
+      <button id="magicButton" onclick="startMagic()">Click for a surprise ❤️</button>
+
+      <div id="surpriseArea" class="hidden">
+        <p class="dedication">"Like nature, your beauty is pure and endless."</p>
+        <button id="nextButton" onclick="showLeafLayer()">Tap for a secret message... ✨</button>
+      </div>
+
+      <div id="leafLayer" class="leaf-scratch-container hidden">
+        <div id="finalMessage" class="hidden-message">
+          <div class="letter-style">
+            <p>I want you to know that you are the girl I truly like.</p>
+            <p>I’ve been working on this small gift for several days just to see you smile, because making you happy is what matters most to me.</p>
+            <p>I hope you love it, and I hope we can share many more moments together for a very long time.</p>
+            <p class="final-touch">Happy birthday, mi vida hermosa.</p>
+            <p class="core-message">Te quiero mucho, mi corazón. ❤️</p>
+          </div>
+        </div>
+        <div class="leaf-overlay"></div>
+        <p class="instruction">Swipe to clear the leaves...</p>
+      </div>
+    </div>
+
+    <audio id="birthdaySong" loop>
+      <source src="https://files.catbox.moe/etvmvx.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
